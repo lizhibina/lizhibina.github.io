@@ -260,6 +260,125 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/13/gradle%E5%92%8Cmaven%E5%8C%BA%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lizhibin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李志彬|blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/13/gradle%E5%92%8Cmaven%E5%8C%BA%E5%88%AB/" itemprop="url">gradle和maven区别</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-13T11:22:02+08:00">
+                2019-04-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="gradle和maven区别"><a href="#gradle和maven区别" class="headerlink" title="gradle和maven区别"></a>gradle和maven区别</h1><h2 id="1-Gradle和Maven都是项目自动构建工具，虽然两者都是项目工具，但是maven现在已经是行业标准，Gradle是后起之秀，很多人对他的了解都是从android-studio中得到的，Gradle抛弃了Maven的基于XML的繁琐配置，众所周知XML的阅读体验比较差，对于机器来说虽然容易识别，但毕竟是由人去维护的。取而代之的是Gradle采用了领域特定语言Groovy的配置，大大简化了构建代码的行数"><a href="#1-Gradle和Maven都是项目自动构建工具，虽然两者都是项目工具，但是maven现在已经是行业标准，Gradle是后起之秀，很多人对他的了解都是从android-studio中得到的，Gradle抛弃了Maven的基于XML的繁琐配置，众所周知XML的阅读体验比较差，对于机器来说虽然容易识别，但毕竟是由人去维护的。取而代之的是Gradle采用了领域特定语言Groovy的配置，大大简化了构建代码的行数" class="headerlink" title="1.Gradle和Maven都是项目自动构建工具，虽然两者都是项目工具，但是maven现在已经是行业标准，Gradle是后起之秀，很多人对他的了解都是从android studio中得到的，Gradle抛弃了Maven的基于XML的繁琐配置，众所周知XML的阅读体验比较差，对于机器来说虽然容易识别，但毕竟是由人去维护的。取而代之的是Gradle采用了领域特定语言Groovy的配置，大大简化了构建代码的行数"></a>1.Gradle和Maven都是项目自动构建工具，虽然两者都是项目工具，但是maven现在已经是行业标准，Gradle是后起之秀，很多人对他的了解都是从android studio中得到的，Gradle抛弃了Maven的基于XML的繁琐配置，众所周知XML的阅读体验比较差，对于机器来说虽然容易识别，但毕竟是由人去维护的。取而代之的是Gradle采用了领域特定语言Groovy的配置，大大简化了构建代码的行数</h2><h2 id="2-maven使用-pom文件，基于XML，gradle使用-gradle文件，基于Groovy，gradle去掉maven中需要固定配置的groupId，artfactId，package等基本参数，通过-apply-plugin-‘java’，apply-plugin-‘war’来表示打包方式，也提供sourceCompatibility，version等一些实用的标签。"><a href="#2-maven使用-pom文件，基于XML，gradle使用-gradle文件，基于Groovy，gradle去掉maven中需要固定配置的groupId，artfactId，package等基本参数，通过-apply-plugin-‘java’，apply-plugin-‘war’来表示打包方式，也提供sourceCompatibility，version等一些实用的标签。" class="headerlink" title="2.maven使用.pom文件，基于XML，gradle使用.gradle文件，基于Groovy，gradle去掉maven中需要固定配置的groupId，artfactId，package等基本参数，通过 apply plugin: ‘java’，apply plugin: ‘war’来表示打包方式，也提供sourceCompatibility，version等一些实用的标签。"></a>2.maven使用.pom文件，基于XML，gradle使用.gradle文件，基于Groovy，gradle去掉maven中需要固定配置的groupId，artfactId，package等基本参数，通过 apply plugin: ‘java’，apply plugin: ‘war’来表示打包方式，也提供sourceCompatibility，version等一些实用的标签。</h2><h2 id="3-maven通过groupId、name和version到配置的Repository里寻找指定依赖中的Jar包。Gradle的生命周期更为复杂，但也支持Maven依赖中的构建生命周期，compile、runtime、testCompile和testRuntime分别对应项目不同阶段的依赖。-并且还简化maven的配置命令。"><a href="#3-maven通过groupId、name和version到配置的Repository里寻找指定依赖中的Jar包。Gradle的生命周期更为复杂，但也支持Maven依赖中的构建生命周期，compile、runtime、testCompile和testRuntime分别对应项目不同阶段的依赖。-并且还简化maven的配置命令。" class="headerlink" title="3.maven通过groupId、name和version到配置的Repository里寻找指定依赖中的Jar包。Gradle的生命周期更为复杂，但也支持Maven依赖中的构建生命周期，compile、runtime、testCompile和testRuntime分别对应项目不同阶段的依赖。 并且还简化maven的配置命令。"></a>3.maven通过groupId、name和version到配置的Repository里寻找指定依赖中的Jar包。Gradle的生命周期更为复杂，但也支持Maven依赖中的构建生命周期，compile、runtime、testCompile和testRuntime分别对应项目不同阶段的依赖。 并且还简化maven的配置命令。</h2><h2 id="maven方式"><a href="#maven方式" class="headerlink" title="maven方式"></a>maven方式</h2><h3 id=""><a href="#" class="headerlink" title=""></a><dependencies></h3><h3 id="-1"><a href="#-1" class="headerlink" title=""></a><dependency></h3><h3 id="org-springframework"><a href="#org-springframework" class="headerlink" title="org.springframework"></a><groupId>org.springframework</groupId></h3><h3 id="spring-context"><a href="#spring-context" class="headerlink" title="spring-context"></a><artifactId>spring-context</artifactId></h3><h3 id="-2"><a href="#-2" class="headerlink" title=""></a></dependency></h3><h3 id="-3"><a href="#-3" class="headerlink" title=""></a></dependencies></h3><h2 id="gradle方式-更为简洁"><a href="#gradle方式-更为简洁" class="headerlink" title="gradle方式 更为简洁"></a>gradle方式 更为简洁</h2><h3 id="dependencies"><a href="#dependencies" class="headerlink" title="dependencies {"></a>dependencies {</h3><h3 id="compile-‘org-springframework-spring-context-2-5-6’"><a href="#compile-‘org-springframework-spring-context-2-5-6’" class="headerlink" title="compile(‘org.springframework:spring-context:2.5.6’)"></a>compile(‘org.springframework:spring-context:2.5.6’)</h3><h3 id="-4"><a href="#-4" class="headerlink" title="}"></a>}</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/11/hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E4%B8%8A%E4%BC%A0github/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -413,7 +532,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
